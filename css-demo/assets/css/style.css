@@ -1,0 +1,39 @@
+/* style sheet for css-demo */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color:#2A8C82;
+    font-family: "Sriracha", cursive;
+
+}
+
+main{
+    background-color:#9BF2EA;
+    width: 80vw;
+    /* long form*/
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    /* Short hand : Top, Right, Bottom, Left */
+    margin: 40px auto 40px auto;
+    /* Short hand : Top/Bottom, Left/Right */
+    margin: 40px auto;
+    /* short hand for border */
+    border: 20px solid #41BFB3;
+    border-radius: 20px;
+}
+
+header.primary {
+    background-color: #9BF2EA;
+    padding: 20px;
+    background-image: url("https://assets.codepen.io/7248/bg_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

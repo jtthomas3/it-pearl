@@ -1,5 +1,8 @@
 /* color scheme : #F2E6B8 (yellow) , #F4CDCB (pink) , #B8F2C9 (green) , #BFF1F2 (blue) , #B8BDF2 (purple)*/
 
+/* SELECTORS - for ID selectors: #idname; for class selectors: .classname; for */
+/* Specificity is key! ID selectors have a score of 100, Class selectors have a score of 10, and regular HTML selectors have a value of 1 */
+
 body {
     font-family: "Sriracha", cursive;
     background-color:#F4CDCB;
