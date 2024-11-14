@@ -8,6 +8,10 @@ html {
     box-sizing: inherit;
 }
 
+img {
+    max-width:100%;
+}
+
 /* ----------- Utility Classes ----------------------*/
 .container{
     padding: 40px;
@@ -103,9 +107,58 @@ header.primary nva a:hover{
     line-height:1.8rem;
 }
 
-#content h2, #content h3{
-    color: #B8BDF2;
+#content h2, #content h3, article.widget h2{
+    color: #000;
     border-left: 7.5px solid #cc3a67;
     padding: 7.5px;
     border-radius: 15px 0;
+}
+
+#blog{
+    background-color: #B8BDF2;
+    padding: 20px 0;
+    border-top: 6px double #0ABFBF;
+}
+
+#blog article.post{
+    background-color: #ffffff;
+    margin: 20px;padding:20px;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "figure header"
+    "figure post-content"
+    "figure footer"
+}
+
+#blog > h2{
+    color:#ffffff;
+    text-shadow: 2px 2px #000;
+    font-size:2.2rem;
+    margin-left: 20px;
+}
+
+#blog article figure{
+    grid-area:figure;
+    margin:0 20px 0 0;
+}
+#blog article header{
+    grid-area:header;
+}
+#blog article .post-content{
+    grid-area:post-content
+}
+#blog article .post-meta{
+    grid-area:footer;
+}
+
+aside .container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#colophon{
+    text-align:center;
 }
