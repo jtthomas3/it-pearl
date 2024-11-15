@@ -1,9 +1,29 @@
-/* color scheme : #F2E6B8 (yellow) , #F4CDCB (pink) , #B8F2C9 (green) , #BFF1F2 (blue) , #B8BDF2 (purple)*/
+/* color scheme : #F2E6B8 (yellow) , #F4CDCB (pink) , #B8F2C9 (green) , #BFF1F2 (blue) , #B8BDF2 (blue-ish purple) , plum , crimson , #FEFEF1 */
 
 /* SELECTORS - for ID selectors: #idname; for class selectors: .classname; for */
 /* Specificity is key! ID selectors have a score of 100, Class selectors have a score of 10, and regular HTML selectors have a value of 1 */
 
 body {
+    font-size: 1.25rem;
     font-family: "Sriracha", cursive;
     background-color:#F4CDCB;
+    
+}
+
+body h1{
+    color: crimson;
+    text-shadow: 2px 2px #FEFEF1;
+    font-size: 3.5rem;
+    text-align: center;
+    border-bottom: 5px dashed #FEFEF1;
+}
+
+li{
+    color:#FEFEF1;
+    list-style-type:lower-roman;
+}
+
+a{
+    color: #dd1d1d;
+    text-decoration: none;
 }
